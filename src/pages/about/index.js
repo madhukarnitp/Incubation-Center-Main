@@ -1,15 +1,7 @@
 import React from 'react'
 import "./style.css";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'
-
 const About = () => {
-
-  AOS.init({
-    duration: 1000
-  });
-
   return (
     <div>
       <section className="about" id="about">

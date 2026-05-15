@@ -78,6 +78,10 @@
     font-size:1.6rem ;
     color: #fff;
   }
+
+  .about-content ul li{
+    color: #0ef;
+  }
   
   
   @media screen and (max-width:988px){

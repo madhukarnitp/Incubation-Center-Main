@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(() => {
@@ -10,13 +8,6 @@ const Navbar = () => {
     return window.scrollY > 0;
   });
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {

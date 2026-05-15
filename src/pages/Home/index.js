@@ -4,8 +4,6 @@ import './NoticeSection.css'; // Update this path if needed
 import "./style.css";
 import Typewriter from "typewriter-effect";
 import { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 // import { Button } from 'primereact/button';
 
@@ -26,10 +24,6 @@ const Home = () => {
       setData(JSON.parse(storedData));
     }
   }, []);
-
-  AOS.init({
-    duration: 1000,
-  });
 
   // hljs.initHighlightingOnLoad();
 
