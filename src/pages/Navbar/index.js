@@ -9,6 +9,7 @@ const Navbar = () => {
     return window.scrollY > 0;
   });
   const [isOpen, setIsOpen] = useState(false);
+  const [activeMobileMenu, setActiveMobileMenu] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,13 +33,24 @@ const Navbar = () => {
     top: "0px",
   };
 
+  const closeMobileMenu = () => {
+    setIsOpen(false);
+    setActiveMobileMenu("");
+  };
+
+  const toggleMobileMenu = (menuName) => {
+    setActiveMobileMenu((currentMenu) =>
+      currentMenu === menuName ? "" : menuName
+    );
+  };
+
   return (
     <div
       className={`headerContainer ${scrolled ? "scrolled" : ""}`}
       style={headerStyle}
     >
       <header className="header" style={navbarStyle}>
-        <a href={nitp_main} className="logo1" style={logoStyle}><img src="  img/download-removebg-preview.png " alt="NITP_logo" /></a>
+        <a href={nitp_main} className="logo1"><img src="img/download-removebg-preview.png" alt="NITP_logo" /></a>
         <nav className="navbar">
           <div className="link">
             <Link to="/#home">Home</Link>
@@ -72,15 +84,6 @@ const Navbar = () => {
             </div>
           </div> 
           <a href={tinkering_lab} className='link' download="Tinkering Lab">Tinkering lab</a>
-
-          <a
-            href="https://tinkering-lab.onrender.com/"
-            className="link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Tinkering lab
-          </a>
         </nav>
 
         {!isOpen && (
@@ -96,24 +99,73 @@ const Navbar = () => {
         {isOpen && (
           <div className="mobileMenuContainer">
             <div className="mobileMenu">
-              <Link onClick={() => setIsOpen(false)} to="/#home">Home</Link>
-              <Link onClick={() => setIsOpen(false)} to="/#about">About</Link>
-              <Link onClick={() => setIsOpen(false)} to="/#incubations">Incubations</Link>
-              <Link onClick={() => setIsOpen(false)} to="/#events">Events</Link>
-              <Link onClick={() => setIsOpen(false)} to="/#gallery">Gallery</Link>
-              <Link onClick={() => setIsOpen(false)} to="/professor">Team</Link>
+              <Link className="mobileMenuLink" onClick={closeMobileMenu} to="/#home">Home</Link>
+
+              <div className="mobileMenuGroup">
+                <div className={`mobileMenuToggle ${activeMobileMenu === "about" ? "active" : ""}`}>
+                  <Link onClick={closeMobileMenu} to="/#about">About Us</Link>
+                  <button
+                    onClick={() => toggleMobileMenu("about")}
+                    type="button"
+                    aria-label="Open About Us links"
+                  >
+                    ⌄
+                  </button>
+                </div>
+                <div className={`mobileSubMenu ${activeMobileMenu === "about" ? "open" : ""}`}>
+                  <Link onClick={closeMobileMenu} to="/#vision">Our Vision</Link>
+                  <Link onClick={closeMobileMenu} to="/#support">Our Support</Link>
+                </div>
+              </div>
+
+              <div className="mobileMenuGroup">
+                <div className={`mobileMenuToggle ${activeMobileMenu === "incubations" ? "active" : ""}`}>
+                  <Link onClick={closeMobileMenu} to="/#incubations">Incubations</Link>
+                  <button
+                    onClick={() => toggleMobileMenu("incubations")}
+                    type="button"
+                    aria-label="Open Incubations links"
+                  >
+                    ⌄
+                  </button>
+                </div>
+                <div className={`mobileSubMenu ${activeMobileMenu === "incubations" ? "open" : ""}`}>
+                  <Link onClick={closeMobileMenu} to="/#darki">Directors</Link>
+                  <Link onClick={closeMobileMenu} to="/#talks">Talks about us!</Link>
+                </div>
+              </div>
+
+              <Link className="mobileMenuLink" onClick={closeMobileMenu} to="/#events">Events</Link>
+              <Link className="mobileMenuLink" onClick={closeMobileMenu} to="/#gallery">Gallery</Link>
+
+              <div className="mobileMenuGroup">
+                <button
+                  className={`mobileMenuToggle ${activeMobileMenu === "team" ? "active" : ""}`}
+                  onClick={() => toggleMobileMenu("team")}
+                  type="button"
+                >
+                  Team <span>⌄</span>
+                </button>
+                <div className={`mobileSubMenu ${activeMobileMenu === "team" ? "open" : ""}`}>
+                  <Link onClick={closeMobileMenu} to="/professor">Professors</Link>
+                  <Link onClick={closeMobileMenu} to="/student">Students</Link>
+                  <Link onClick={closeMobileMenu} to="/admin">Admin</Link>
+                </div>
+              </div>
 
               <a
-                href="https://tinkering-lab.onrender.com/"
+                className="mobileMenuLink"
+                href={tinkering_lab}
                 target="_blank"
                 rel="noreferrer"
+                onClick={closeMobileMenu}
               >
                 Tinkering lab
               </a>
             </div>
 
             <button
-              onClick={() => setIsOpen(false)}
+              onClick={closeMobileMenu}
               className="crossBtn"
               aria-label="Close menu"
             >

@@ -50,14 +50,16 @@
     gap: 2rem;
     color: #fff;
     min-width: 0;
+    overflow-y: hidden;
     overflow-wrap: anywhere;
   }
   
   .about-content ul li{ 
     font-size:1.6rem ;
     row-gap: 1rem;
-    list-style: initial;
-    color: #fff;
+    list-style: disc;
+    color: #0ef;
+    margin-bottom: 1.2rem;
   }
   .about-content h3{
     color: #fff;
@@ -82,7 +84,6 @@
   .about-content ul li{
     color: #0ef;
   }
-  
   
   @media screen and (max-width:988px){
    .aboutdiv{
@@ -110,10 +111,10 @@
     .building-img{
       display:none;
     }
-    div.heading{
+    /*div.heading{
      margin-top: -80px;
        
-    }
+    }*/
     .aboutdiv{ 
     grid-template-columns: minmax(0, 1fr);
     }

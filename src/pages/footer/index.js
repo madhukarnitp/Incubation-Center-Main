@@ -70,7 +70,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-iconTop">
-        <a href="#home"><i className='bx bx-up-arrow-alt'></i></a>
+        <button onClick={() => window.scrollTo(0, 0)}><i className='bx bx-up-arrow-alt'></i></button>
       </div>
     </div>
   </footer>
@@ -78,4 +78,4 @@ const Footer = () => {
   )
 }
 
-export default Footer 
+export default Footer;

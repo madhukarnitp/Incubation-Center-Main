@@ -74,7 +74,7 @@
   text-decoration: none;
   color: white; /* adjust if needed */
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 400;
   transition: font-size 0.3s ease, color 0.3s ease;
 }
 
@@ -161,19 +161,84 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: flex-start;
+  gap: 12px;
+  overflow-y: auto;
 }
 
 .mobileMenu a {
   position: relative;
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   letter-spacing: 0;
-  padding: 8px 0;
+  padding: 7px 0;
   transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.mobileMenuLink,
+.mobileMenuToggle {
+  width: min(320px, 100%);
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobileMenuToggle {
+  transition: color 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+button.mobileMenuToggle {
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button.mobileMenuToggle span {
+  margin-left: 10px;
+  color: #00f7ff;
+  transition: transform 0.3s ease;
+}
+
+.mobileMenuToggle a {
+  flex: 1;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileMenuToggle button {
+  width: 48px;
+  min-height: 44px;
+  border: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  color: #00f7ff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.mobileMenuToggle.active {
+  color: #00f7ff;
+  background: rgba(0, 247, 255, 0.08);
+  border-color: rgba(0, 247, 255, 0.28);
+}
+
+.mobileMenuToggle.active button {
+  transform: rotate(180deg);
+}
+
+button.mobileMenuToggle.active span {
+  transform: rotate(180deg);
 }
 
 .mobileMenu a::after {
@@ -197,6 +262,54 @@
 .mobileMenu a:hover::after,
 .mobileMenu a:focus-visible::after {
   width: 100%;
+}
+
+.mobileMenuGroup {
+  width: min(320px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.mobileSubMenu {
+  width: calc(100% - 22px);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 0;
+  padding: 0 12px;
+  border-left: 1px solid rgba(0, 247, 255, 0.22);
+  border-right: 1px solid rgba(0, 247, 255, 0.22);
+  background: rgba(0, 0, 0, 0.18);
+  transition: max-height 0.3s ease, opacity 0.25s ease, margin-top 0.3s ease, padding 0.3s ease;
+}
+
+.mobileSubMenu.open {
+  max-height: 180px;
+  opacity: 1;
+  margin-top: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mobileSubMenu a {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+  padding: 7px 0;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.mobileSubMenu a:hover,
+.mobileSubMenu a:focus-visible {
+  background: rgba(0, 247, 255, 0.08);
 }
 
 .crossBtn {
