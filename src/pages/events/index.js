@@ -1,4 +1,5 @@
 import React from 'react';
+import { pitchtember_url } from '../../constants/const';
 import "./style.css";
 import {useNavigate } from "react-router-dom";
 // import "./style.scss";
@@ -35,11 +36,11 @@ const Events = () => {
               <div className="flip-card-front">
                 <img src="img/events/Events/pitchtember.jpg" alt="event"/>
               </div>
-              <div class="flip-card-back">
+              <div className="flip-card-back">
             <h1>PitchTember 2023</h1>
             <p>Date: 24/11/2023 to 18/12/2023</p>
             <p>Venue: CV Raman Hall</p>
-                <a href="https://www.pitchtember.tech/" className="btn">View More →</a>
+                <a href={pitchtember_url} className="btn">View More →</a>
               </div>
             </div>
           </div>
