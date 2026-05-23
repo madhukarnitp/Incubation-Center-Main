@@ -1,12 +1,12 @@
 import React from 'react';
 import { pitchtember_url } from '../../constants/const';
 import "./style.css";
-import {useNavigate } from "react-router-dom";
+
 // import "./style.scss";
 
 const Events = () => {
   
-  const navigate = useNavigate();
+
   return (
     <div>
       <section className="events" id="events">

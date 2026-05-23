@@ -6,7 +6,6 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { FaTwitter } from "react-icons/fa";
-import Login from '../login/login';
 import { Link } from 'react-router-dom';
 const Footer = () => {
   var currentTime = new Date();
@@ -26,27 +25,27 @@ const Footer = () => {
             <li>
               <Link to="/professor">Our Team</Link>
             </li>
-            <li><a href="#">Our Programs</a></li>
-            <li><a href="#">privacy policy</a></li>
-            <li><a href="#">Partnership Opportunities</a></li>
-            <li onClick={handlelogin}><a href="#">Admin Notice</a></li>
+            <li><span>Our Programs</span></li>
+            <li><span>privacy policy</span></li>
+            <li><span>Partnership Opportunities</span></li>
+            <li onClick={handlelogin}><span>Admin Notice</span></li>
           </ul>
         </div>
         <div className="footer-col">
           <h4>get help</h4>
           <ul>
-            <li><a href="">FAQ</a></li>
-            <li><a href="#">Success Stories</a></li>
-            <li><a href="#">Application Process</a></li>
-            <li><a href="#">Funding & Investment</a></li>
-            <li><a href="#">Startup Resources</a></li>
+            <li><span>FAQ</span></li>
+            <li><span>Success Stories</span></li>
+            <li><span>Application Process</span></li>
+            <li><span>Funding & Investment</span></li>
+            <li><span>Startup Resources</span></li>
           </ul>
         </div>
         <div className="footer-col">
           <h4>Know More</h4>
           <ul>
-            <li><a href="#">Alumni Network</a></li>
-            <li><a href="#">Innovation Lab</a></li>
+            <li><span>Alumni Network</span></li>
+            <li><span>Innovation Lab</span></li>
             {/* <li><a href="#">shoes</a></li>
             <li><a href="#">dress</a></li> */}
           </ul>
@@ -55,7 +54,7 @@ const Footer = () => {
           <h4>follow us</h4>
           <div className="social-links">
             <a href={facebook_url}><i className="fab fa-facebook-f">< FaFacebook /></i></a>
-            <a href="#"><i className="fab fa-twitter">< FaTwitter /></i></a>
+            <span><i className="fab fa-twitter">< FaTwitter /></i></span>
             <a href={instagram_url}><i className="fab fa-instagram">< FaInstagram/></i></a>
             <a href={linkedin_url}><i className="fab fa-linkedin-in">< RiLinkedinBoxFill/></i></a>
           </div>

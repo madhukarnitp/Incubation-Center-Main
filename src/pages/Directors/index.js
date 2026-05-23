@@ -9,11 +9,11 @@ const Director = () => {
 				<h1 className="h1 text-center" id="pageHeaderTitle" style={{ color: "#0ef" }}>Director Desk</h1>
 
 				<article className="postcard dark blue">
-					<a className="postcard__img_link" href="#">
-						<img className="postcard__img" src="img/team/director.jpg" alt="Image Title" />
-					</a>
+					<div className="postcard__img_link">
+						<img className="postcard__img" src="img/team/director.jpg" alt="Director NIT Patna" />
+					</div>
 					<div className="postcard__text">
-						<h1 className="postcard__title blue"><a href="#"  style={{ color: "#0ef" }}>Director, NIT Patna</a></h1>
+						<h1 className="postcard__title blue"><span style={{ color: "#0ef" }}>Director, NIT Patna</span></h1>
 						{/* <div className="postcard__subtitle small">
 					<time datetime="2020-05-25 12:00:00">
 						<i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
@@ -31,12 +31,12 @@ const Director = () => {
 					</div>
 				</article>
 				<article className="postcard dark red">
-					<a className="postcard__img_link" href="#">
-						<img className="postcard__img" src="img/team/bharatgupta.jpg" alt="Image Title" />
-					</a>
+					<div className="postcard__img_link">
+						<img className="postcard__img" src="img/team/bharatgupta.jpg" alt="Prof. Bharat Gupta" />
+					</div>
 					<div className="postcard__text">
-						<h1 className="postcard__title red"><a href="#">Professor in Charge
-            INCUBATION CENTER</a></h1>
+						<h1 className="postcard__title red"><span>Professor in Charge
+            INCUBATION CENTER</span></h1>
 						<div className="postcard__subtitle small">
 							<time dateTime="2020-05-25 12:00:00">
 								<i className="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020

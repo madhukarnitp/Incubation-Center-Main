@@ -3,7 +3,7 @@ import { Navigation, Pagination, Scrollbar, Autoplay, EffectCoverflow } from 'sw
 
 import { useNavigate } from "react-router-dom";
 import React from 'react';
-import Pag from './page/card.js';
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -75,7 +75,7 @@ const Incubations = () => {
             <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="img/incubations/onibus.png" alt="image" className="card__img" />
+                  <img src="img/incubations/onibus.png" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -85,7 +85,7 @@ const Incubations = () => {
                   Onibus offers a service-oriented app and web platform facilitating efficient communication between schools and parents about students' activities.
                   </p>
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -94,7 +94,7 @@ const Incubations = () => {
             <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="img/incubations/busymech.png" alt="image" className="card__img" />
+                  <img src="img/incubations/busymech.png" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -105,7 +105,7 @@ const Incubations = () => {
                   </p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -114,7 +114,7 @@ const Incubations = () => {
             <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="img/incubations/shekhartele.png " alt="image" className="card__img" />
+                  <img src="img/incubations/shekhartele.png " alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -125,7 +125,7 @@ const Incubations = () => {
                   </p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -134,7 +134,7 @@ const Incubations = () => {
             <SwiperSlide>
              <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -146,7 +146,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:himanshu@schooglink.com'>himanshu@schooglink.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -155,7 +155,7 @@ const Incubations = () => {
             <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -167,7 +167,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:harendra.niper@gmail.com'>harendra.niper@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -176,7 +176,7 @@ const Incubations = () => {
             <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -189,7 +189,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:satishkp113@gmail.com'>satishkp113@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -198,7 +198,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -210,7 +210,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:sudhirsinha2002@yahoo.com'>sudhirsinha2002@yahoo.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -219,7 +219,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -233,7 +233,7 @@ const Incubations = () => {
                   </p>
                   <p className='card_contact_email'>Contact: <a href='mailto:sarrafkundan@gmail.com'>sarrafkundan@gmail.com</a></p>
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -242,7 +242,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -256,7 +256,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:gupta656mayank@gmail.com'>gupta656mayank@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -265,7 +265,7 @@ const Incubations = () => {
          <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -277,7 +277,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:thegauravmishra@yahoo.com'>thegauravmishra@yahoo.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -286,7 +286,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -298,7 +298,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:omkarkumar39@gmail.com'>omkarkumar39@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -307,7 +307,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                 <img src="" alt="image" className="card__img" />
+                 <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -319,7 +319,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='princesubham862@gmail.com'>princesubham862@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -328,7 +328,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -342,7 +342,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:adityaamar.garva@gmail.com'>adityaamar.garva@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -352,7 +352,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -367,7 +367,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='contactindicstudios@gmail.com'>contactindicstudios@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -376,7 +376,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -388,7 +388,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:competitionkingoff@gmail.com'>competitionkingoff@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -397,7 +397,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -412,7 +412,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:antariksha.rnd@gmail.com'>antariksha.rnd@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -421,7 +421,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -433,7 +433,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:priyapiya9155@gmail.com'>priyapiya9155@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -442,7 +442,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -454,7 +454,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:muzvishalkumar417@gmail.com'>muzvishalkumar417@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -463,7 +463,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -475,7 +475,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:nodewaptechnology@gmail.com'>nodewaptechnology@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -484,7 +484,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -496,7 +496,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:wheelsplay.in@gmail.com'>wheelsplay.in@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -505,7 +505,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -517,7 +517,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:kapil75k@gmail.com'>kapil75k@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -526,7 +526,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -538,7 +538,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:rajnandaniswrup113@gmail.com'>rajnandaniswrup113@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -547,7 +547,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -559,7 +559,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:medhasobti@gmail.com'>medhasobti@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -568,7 +568,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -580,7 +580,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:ambopqc@gmail.com'>ambopqc@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -589,7 +589,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -601,7 +601,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:amitmce2019@gmail.com'>amitmce2019@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -610,7 +610,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -625,7 +625,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:grokciecom@gmail.com'>grokciecom@gmail.com</a></p>
 
                  <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -634,7 +634,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -646,7 +646,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:rishidev22@outlook.com'>rishidev22@outlook.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -655,7 +655,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -670,7 +670,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:pariharakshat02@gmail.com'>pariharakshat02@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -679,7 +679,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -694,7 +694,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:sankalpmodi0101@gmail.com'>sankalpmodi0101@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -703,7 +703,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -718,7 +718,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:dpandey593@gmail.com'>dpandey593@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -727,7 +727,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -742,7 +742,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:tarun.double2016@gmail.com'>tarun.double2016@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -751,7 +751,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -763,7 +763,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:adrovertechnologies@gmail.com'>adrovertechnologies@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -772,7 +772,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -786,7 +786,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:alisharanjan19@gmail.com'>alisharanjan19@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -795,7 +795,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -809,7 +809,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:nk1535628@gmail.com'>nk1535628@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -818,7 +818,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -831,7 +831,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:difellysi@gmail.com'>difellysi@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -840,7 +840,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -855,7 +855,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:kartbihar@gmail.com'>kartbihar@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -864,7 +864,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -878,7 +878,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:kavitasingh4242@gmail.com'>kavitasingh4242@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -887,7 +887,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -900,7 +900,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:kprience4@gmail.com'>kprience4@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -909,7 +909,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -923,7 +923,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:naveenbhu2019@gmail.com'>naveenbhu2019@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -932,7 +932,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -946,7 +946,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:sahpriyanshu71@gmail.com'>sahpriyanshu71@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -955,7 +955,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -970,7 +970,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:adarshavinav123@gmail.com'>adarshavinav123@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -979,7 +979,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -994,7 +994,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:priyanshu.khangar417@gmail.com'>priyanshu.khangar417@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -1003,7 +1003,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -1017,7 +1017,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:rabelectron@gmail.com'>rabelectron@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -1026,12 +1026,12 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
                 <div className="card__incubationdata">
-                  <h3 className="card__name"></h3>
+                  <h3 className="card__name">Startup</h3>
                   <p className="card__description">
                   Will be working on survey , manufacturing, supply, installations, commissioning of Control panels , APFC panels, 
                   Motor Control Cubical, Equipped with an electronic device, through which the real time metering details of the industry or the installations will be easily available on the mobile phone based applications.
@@ -1039,7 +1039,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:kr.ashuu@gmail.com'>kr.ashuu@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -1048,7 +1048,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -1060,7 +1060,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:noviotechnologies@gmail.com'>noviotechnologies@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -1069,7 +1069,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                 <img src="" alt="image" className="card__img" />
+                 <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -1084,7 +1084,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:businesswithbhardwaj07@gmail.com'>businesswithbhardwaj07@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>
@@ -1093,7 +1093,7 @@ const Incubations = () => {
           <SwiperSlide>
               <article className="productions_card">
                 <div className="card__image">
-                  <img src="" alt="image" className="card__img" />
+                  <img src="" alt="Incubation startup" className="card__img" />
                   <div className="card__shadow"></div>
                 </div>
 
@@ -1106,7 +1106,7 @@ const Incubations = () => {
                   <p className='card_contact_email'>Contact: <a href='mailto:jhav5225@gmail.com'>jhav5225@gmail.com</a></p>
 
                   <div className="card_footer">
-                  <a href="#" className="card__button">View More</a>
+                  <button className="card__button">View More</button>
                   </div>
                 </div>
               </article>

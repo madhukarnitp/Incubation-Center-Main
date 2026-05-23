@@ -3,9 +3,7 @@
 import {  Routes, Route } from 'react-router-dom';
 import './App.css';
 // import Home from './pages/Home'; 
-import Navbar from './pages/Navbar';
 import Login from './pages/login/login.js'
-import Register from './pages/register/register.js'
 // import Director from './pages/Directors';  
 // import About from './pages/about';
 // import Vision from './pages/Vision';
@@ -17,7 +15,6 @@ import Notice from './pages/Notice';
 // import Gallery from './pages/gallery';
 // import Idea from './pages/idea';
 // import Faqs from './pages/faqs';
-import Footer from './pages/footer';
 // import Talks_LitsenMore from './pages/talks_LitsenMore';
 import Homes from './Homes.js';
 
@@ -29,7 +26,7 @@ import Admin from './pages/team/Admin.js';
 
 import Gallery1 from './pages/gallery/Gallery.js';
 import React from 'react';
-import Talks_LitsenMore from './pages/talks_LitsenMore/index.js';
+import TalksLitsenMore from './pages/talks_LitsenMore/index.js';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import AOS from "aos";
@@ -94,7 +91,7 @@ function ScrollToHash() {
           <Route path='/student' element={<Student />}/>
           <Route path='/admin' element={<Admin />}/>
           <Route path="/gallery" element={<Gallery1/>}/>
-          <Route path="/talksmore" element={<Talks_LitsenMore/>}/>
+          <Route path="/talksmore" element={<TalksLitsenMore/>}/>
 
     
         </Routes>

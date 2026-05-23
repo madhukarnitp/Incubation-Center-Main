@@ -35,11 +35,7 @@ const handleLogin = async (e) => {
 };
 
 
-  const auth = [
-    { email: "ankurverma6670@gmail.com", password: "Ankur@6770" },
-    { email: "ankurverma7707@gmail.com", password: "Ankur@6670" },
-    { email: "pankaj5656@gmail.com", password: "121212" }
-  ];
+
 
   
 

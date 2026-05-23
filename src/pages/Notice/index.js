@@ -4,14 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../Navbar';
 import './notice.css'
 const Notice = () => {
-  let dataarray = [];
+
 
   const navigate = useNavigate()
   const [input, setinput] = useState({
     content: "",
   });
 
-  const [submittedcontent, setsubmittedcontent] = useState()
+  const [submittedcontent] = useState()
   const [notice, setnotice] = useState([
     "Hello, there will be holiday tomorrow.", "Everyone should be prsent."
 
@@ -31,7 +31,7 @@ const Notice = () => {
 
     const loggedin = localStorage.getItem("loggedin")
     console.log(loggedin);
-    if (loggedin == "true") {
+    if (loggedin === "true") {
       const storedData = localStorage.getItem("data");
       let dataArray = storedData ? JSON.parse(storedData) : [];
 
