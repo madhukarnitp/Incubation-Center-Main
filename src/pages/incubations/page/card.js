@@ -3,6 +3,7 @@ import './card.css'
 import Footer from '../../footer' 
 import Navbar from '../../Navbar';
 
+// eslint-disable-next-line no-unused-vars
 const FlipCard = ({ card, isFlipped, onToggleFlip }) => {
   return (
     <div
@@ -39,7 +40,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/onibus.png" alt="image" className="card__img" />
+            <img src="img/incubations/onibus.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -56,7 +57,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/busymech.png" alt="image" className="card__img" />
+            <img src="img/incubations/busymech.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -73,7 +74,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/shekhartele.png " alt="image" className="card__img" />
+            <img src="img/incubations/shekhartele.png " alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -92,7 +93,7 @@ function Pag() {
         <div className="flip-card-inner">
          <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
           </div>
           </div>
           <div className="flip-card-back">
@@ -109,7 +110,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
           <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
           </div>
           </div>
           <div className="flip-card-back">
@@ -126,7 +127,7 @@ function Pag() {
         <div className="flip-card-inner">
          <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -143,7 +144,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -160,7 +161,7 @@ function Pag() {
         <div className="flip-card-inner">
          <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -177,7 +178,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -194,7 +195,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -211,7 +212,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -228,7 +229,7 @@ function Pag() {
         <div className="flip-card-inner">
          <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -245,7 +246,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -262,7 +263,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -279,7 +280,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -296,7 +297,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -313,7 +314,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -330,7 +331,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -347,7 +348,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -362,7 +363,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -379,7 +380,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -396,7 +397,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -413,7 +414,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -428,7 +429,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -442,7 +443,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -459,7 +460,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -476,7 +477,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -493,7 +494,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -510,7 +511,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -527,7 +528,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -544,7 +545,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -561,7 +562,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -578,7 +579,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -595,7 +596,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -612,7 +613,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -629,7 +630,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -646,7 +647,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -663,7 +664,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -680,7 +681,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -697,7 +698,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -714,7 +715,7 @@ function Pag() {
         <div className="flip-card-inner">
          <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -731,7 +732,7 @@ function Pag() {
         <div className="flip-card-inner">
          <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -748,7 +749,7 @@ function Pag() {
         <div className="flip-card-inner">
          <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -765,7 +766,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -782,7 +783,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -798,7 +799,7 @@ function Pag() {
         <div className="flip-card-inner">
          <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">
@@ -815,7 +816,7 @@ function Pag() {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="image-container">
-            <img src="img/incubations/fliptoknow.png" alt="image" className="card__img" />
+            <img src="img/incubations/fliptoknow.png" alt="Incubation startup" className="card__img" />
             </div>
           </div>
           <div className="flip-card-back">

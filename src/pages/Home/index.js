@@ -13,17 +13,7 @@ const Home = () => {
   //   loop: {},
   //   typeSpeed: 120,
   //   deleteSpeed: 50,
-  const [data, setData] = useState([]);
 
-  useEffect(() => {
-    // Retrieve the JSON string from localStorage
-    const storedData = localStorage.getItem("data");
-
-    // Parse the JSON string to convert it back into an array
-    if (storedData) {
-      setData(JSON.parse(storedData));
-    }
-  }, []);
 
   // hljs.initHighlightingOnLoad();
 

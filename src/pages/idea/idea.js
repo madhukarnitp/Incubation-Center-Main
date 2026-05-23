@@ -39,7 +39,7 @@ const IdeaJs = async (e) => {
   }
 
   function checkEmail() {
-    const emailRegix = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+    const emailRegix = /^([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
     const errorTxtEmail = document.querySelector(".error-txt.email");
 
     if (!email.value.match(emailRegix)) {

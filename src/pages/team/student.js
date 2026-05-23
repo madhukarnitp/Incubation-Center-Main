@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import {
   student_coordinator_linkedin,
   student_cocoordinator_1_linkedin,

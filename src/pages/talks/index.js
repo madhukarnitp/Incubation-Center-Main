@@ -1,5 +1,5 @@
-import {React ,useState} from 'react';
-import { useNavigate } from 'react-router-dom';
+import {React} from 'react';
+
 import "./style.css";
 
 // function litsenMore(){
@@ -179,7 +179,7 @@ import "./style.css";
 // }
 
 const Talks =  () => {
-  const navigate = useNavigate();
+
 
   // const [  setShow] = useState(true);
 

@@ -2,8 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { supabase } from '../../supabaseClient';
-import Navbar from '../Navbar';
-import Footer from '../footer';
+
 import './Gallery.css';
 
 const supabaseBaseUrl = process.env.REACT_APP_SUPABASE_STORAGE;
