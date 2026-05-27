@@ -1,188 +1,286 @@
- 
-/* .heading{
-    margin-top: 5rem;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 1rem;
-    color: rgb(246, 249, 249);
-    margin-bottom: 2rem;
-} */
- 
-.container_header {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-} 
+.cards_pag {
+  min-height: 100vh;
+  color: #f4f8ff;
+  background:
+    radial-gradient(circle at top, rgba(0, 238, 255, 0.08), transparent 28%),
+    linear-gradient(180deg, #050810 0%, #050810 100%);
+}
 
 .container_header {
-  height: 45vh;
-  display: flex;
-  align-items: center;
+  min-height: 34rem;
+  display: grid;
+  place-items: center;
+  padding: 8rem 1.5rem 4.5rem;
   color: #fff;
-  justify-content: center;  
-  background: linear-gradient(180deg, transparent, #000),
-    url(../../../../public/img/image.jpg.jpg  );
-  background-attachment: fixed;
+  text-align: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.container_header   h1{
-  align-items: center;
-  padding-top: 20px;
-  font-size: 100px;
-  color: bisque;
-  justify-items: center;
+.container_header__content {
+  width: min(900px, 100%);
 }
 
-.cards_pag{
-  background-color: #000000;
-  opacity: 1;
-  background-image: radial-gradient(#142850 0.8px, #000000 0.8px);
-  background-size: 16px 16px;
+.container_header__eyebrow {
+  margin-bottom: 0.75rem;
+  color: #0ef;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
 }
 
-.cards_pag  .main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    gap: 4rem;
-    margin-bottom:3rem ;
-    margin-top:3rem ;
+.container_header h1 {
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.95;
+  color: #fef5df;
+  text-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
-.cards_pag .main .row{
+
+.container_header__copy {
+  width: min(760px, 100%);
+  margin: 1.25rem auto 0;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: rgba(244, 248, 255, 0.82);
+}
+
+.main {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 6rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  gap:3vw;
+  flex-direction: column;
+  gap: 2rem;
 }
-.cards_pag .flip-card {
-    background-color: transparent;
-    width: 22% !important;
-    height: 20rem;
-    /* perspective: 1000px; */
-    font-family: sans-serif;
-    font-size: large !important;
-  }
-  .cards_pag .image-container {
-    width: 100%;
-    height: 180px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    display: flex;
-    border-radius: 8px;
-    justify-content: center;
-    align-items: center;
-  }
-  .cards_pag .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-fit: contain;
-    border-radius: 4px;
-  }
-  
-  .cards_pag .title {
-    font-size: 2rem !important;
-    font-weight: 900;
-    text-align: center;
-    margin: .5rem;
-  }
-  .cards_pag .button{
-    margin: 0 auto;
-    background-color: rgb(6, 156, 6);
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    width: fit-content;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 2rem;
-   
-  }
-  .cards_pag .image{
-    background-color: aqua;
-    height: 60%;
-    width: 50%;
-    border-radius: 50%;
-    margin: 0 auto; 
 
+.startup-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 0;
+  padding-bottom: 2rem;
+}
+
+.startup-card {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  min-height: 16rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(180deg, rgba(15, 22, 34, 0.98), rgba(6, 10, 17, 0.98));
+  border: 1px solid rgba(0, 238, 255, 0.12);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.startup-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 238, 255, 0.34);
+  box-shadow: 0 24px 55px rgba(0, 238, 255, 0.12);
+}
+
+.startup-card__image-wrap {
+  flex: 0 0 min(32%, 22rem);
+  min-height: 16rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(135deg, rgba(0, 238, 255, 0.08), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.03);
+}
+
+.startup-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.startup-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+  padding: 1.15rem 1.25rem 1.25rem;
+  justify-content: center;
+}
+
+.startup-card__index {
+  margin: 0;
+  color: rgba(0, 238, 255, 0.75);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.card__description {
+  margin: 0;
+  color: rgba(244, 248, 255, 0.76);
+  font-size: 0.98rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.card__email {
+  margin: 0;
+  color: rgba(244, 248, 255, 0.78);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.card__email a {
+  color: #0ef;
+  text-decoration: none;
+}
+
+.card__email a:hover {
+  text-decoration: underline;
+}
+
+.pagination_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.pagination_shell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+  margin-top: 0;
+  padding: 1.25rem 1rem 1.5rem;
+  background: rgba(6, 10, 17, 0.92);
+  border: 1px solid rgba(0, 238, 255, 0.12);
+  border-radius: 1rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+.pagination_numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination_button,
+.pagination_number {
+  border: 1px solid rgba(0, 238, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f4f8ff;
+  border-radius: 999px;
+  padding: 0.8rem 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.pagination_ellipsis {
+  padding: 0 0.4rem;
+  color: rgba(244, 248, 255, 0.58);
+  font-weight: 700;
+}
+
+.pagination_button:hover:not(:disabled),
+.pagination_number:hover:not(.is-active) {
+  transform: translateY(-2px);
+  border-color: rgba(0, 238, 255, 0.35);
+  background: rgba(0, 238, 255, 0.1);
+}
+
+.pagination_button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.pagination_number.is-active {
+  background: linear-gradient(135deg, #0ef 0%, #76f6ff 100%);
+  color: #041019;
+  border-color: transparent;
+}
+
+.pagination_status {
+  margin: 0;
+  text-align: center;
+  color: rgba(244, 248, 255, 0.75);
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container_header {
+    min-height: 28rem;
+    padding: 7rem 1rem 3.5rem;
   }
-  .cards_pag .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+
+  .startup-grid {
+    margin-top: 0;
   }
-  
-  .cards_pag .flip-card:hover .flip-card-inner {
-    transform: rotateX(180deg);
-  }
-  
-  .cards_pag .flip-card-front, .cards_pag .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    position: absolute;
-    display: flex;
+
+  .startup-card {
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 1rem;
+    min-height: 0;
   }
-  
-  .cards_pag .flip-card-front {
-    background: linear-gradient(120deg, rgb(151, 150, 149) 60%, rgb(95, 94, 94) 88%,
-       rgb(74, 74, 73) 40%, rgba(59, 58, 58, 0.703) 48%);
-    color: rgb(66, 64, 64);
+
+  .startup-card__image-wrap {
+    flex: 0 0 auto;
+    min-height: 13rem;
   }
-  
-  .cards_pag .flip-card-back {
-    background: linear-gradient(120deg, rgb(57, 57, 57) 30%, rgb(67, 66, 66) 88%,
-       rgb(93, 92, 92) 40%, rgb(110, 109, 109) 78%);
-    color: white;
-    transform: rotateX(-180deg);
-    font-size: 2.5rem !important;
+
+  .main {
+    padding: 1.5rem 0.9rem 5rem;
+    gap: 1.5rem;
   }
-  .cards_pag #found{
-    font-size: 2rem;
+
+  .pagination_button,
+  .pagination_number {
+    padding: 0.72rem 0.95rem;
   }
-  @media screen and (max-width:638px) {
-    .cards_pag h1{
-      font-size: 60px;
-    }
+
+  .pagination_shell {
+    padding: 1rem 0.85rem 1.15rem;
   }
-  @media screen and (max-width:440px) {
-    .cards_pag .flip-card {
-      width: 30% !important;
-      height: 15rem !important;
-    }
-    .cards_pag h1{
-      font-size: 50px;
-    }
-    .cards_pag #found{
-      font-size: 1rem;
-    }
-    .cards_pag .title {
-      font-size: 1.5rem !important;
-    }
-    .cards_pag .button{
-      font-size: 0.8rem;
-    }
-    
+
+  .startup-grid {
+    padding-bottom: 1.5rem;
   }
-  
+}
+
+@media screen and (max-width: 480px) {
+  .container_header__eyebrow {
+    letter-spacing: 0.16em;
+  }
+
+  .startup-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .startup-card__body {
+    padding: 1rem;
+  }
+
+  .pagination_bar {
+    gap: 0.65rem;
+  }
+
+  .pagination_numbers {
+    gap: 0.35rem;
+  }
+}
