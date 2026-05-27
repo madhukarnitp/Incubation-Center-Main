@@ -1,5 +1,4 @@
- 
-  /* footer css */
+   /* footer css */
   
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
   .footer body{
@@ -28,7 +27,7 @@
   }
   .footer{
       background:  #0a0a0a;
-      padding: 70px 0 0 0;
+      padding: 70px 0 0 10px;
   }
   .footer-col{
      width: 25%;
@@ -70,24 +69,47 @@
   }
   .footer-col .social-links a{
       display: inline-block;
-      height: 40px;
-      width: 40px;
-      background-color: rgba(255,255,255,0.1);
-      margin:0 10px 10px 0;
+      height: 42px;
+      width: 42px;
+      margin: 0px 10px 10px 0px;
       text-align: center;
       line-height: 40px;
       border-radius: 50%;
-      color: #ffffff;
       transition: all 0.5s ease;
       padding-top: 3px;
       font-size: 20px;
   }
   .footer-col .social-links a:hover{
-      color: #0a0a0a;
-      background-color: #0ef;
+      transform: translateY(-3px);
   }
 
+  .facebook:hover{
+    filter:
+        drop-shadow(0 0 6px #1877f2)
+        drop-shadow(0 0 14px #1877f2)
+        drop-shadow(0 0 22px #1877f2);
+}
+.twitter:hover{
+    filter:
+        drop-shadow(0 0 6px #ffffff)
+        drop-shadow(0 0 14px #ffffff)
+        drop-shadow(0 0 22px #ffffff);
+}
+.linkedin:hover{
+    filter:
+        drop-shadow(0 0 6px #0077b5)
+        drop-shadow(0 0 14px #0077b5)
+        drop-shadow(0 0 22px #0077b5);
+}
+.instagram:hover{
+    filter:
+        drop-shadow(0 0 6px #e1306c)
+        drop-shadow(0 0 14px #e1306c)
+        drop-shadow(0 0 22px #e1306c);
+}
+  
 .footer-text p{
+    margin-top: -1rem;
     font-size: 1.6rem;
 }
 .footer-iconTop{
@@ -95,24 +117,25 @@
     justify-content: flex-end;
     margin-left: auto;
 }
-.footer-iconTop button {
-    display: inline-flex;
+.footer-iconTop .scroll-top-btn{
+    width: 45px;
+    height: 45px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: .8rem;
-    background: var(--main-color);
-    border-radius: .8rem;
-    transition: .5s ease;
+    border: none;
+    outline: none;
+    border-radius: 16px;
     cursor: pointer;
+    background: linear-gradient(135deg, #00e5ff, #00bcd4);
+    color: transparent;
+    box-shadow: 0 0 12px rgba(0,229,255,0.35);
+    transition: all .3s ease;
 }
 
-.footer-iconTop button:hover{
-    box-shadow: #0a0a0a;
-}
-
-.footer-iconTop button i {
-    font-size: 20px;
-    color: #aef;
+.footer-iconTop .scroll-top-btn:hover{
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 0 14px rgba(0,229,255,0.5), 0 0 28px rgba(0,229,255,0.35);
 }
 
 .footer_container2{
@@ -129,23 +152,23 @@
     .footer-col{
       width: 50%;
       margin-bottom: 30px;
+    }
   }
-  }
-  @media(max-width: 574px){
+  @media(max-width: 480px){
+    .footer{
+        padding-left: 20px;
+    }
     .footer-col{
       width: 100%;
+    }
+    .footer_container2{
+        align-items: stretch;
+    }
+    .footer-iconTop{
+        width: 100%;
+        margin-top: 1rem;
+    }
   }
-  .footer_container2{
-      align-items: stretch;
-  }
-  .footer-iconTop{
-      width: 100%;
-      margin-top: 1rem;
-  }
-  }
-
-
-  
   
   
   /* footer css */
