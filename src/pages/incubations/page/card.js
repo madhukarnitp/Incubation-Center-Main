@@ -5,7 +5,7 @@ import { incubationsData } from '../incubationsData.js';
 
 const FALLBACK_IMAGE = '/img/incubations/fliptoknow.png';
 const HEADER_IMAGE = '/img/image.jpg.jpg';
-const ITEMS_PER_PAGE = 6;
+const ITEMS_PER_PAGE = 5;
 
 function Pag() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -100,7 +100,7 @@ function Pag() {
           })}
         </section>
 
-        <div className="pagination_shell">
+        <div className="pagination_shell mt-5">
           <div className="pagination_bar" aria-label="Startup pagination">
             <button
               type="button"

@@ -89,6 +89,24 @@ swiper-slide {
   display: flex;
   justify-content: center;
   padding: 1.5rem 1rem; /* Add padding so box-shadows and hover scale don't get cut off */
+  opacity: 1 !important;
+}
+
+/* Force hide swiper shadows in case coverflowEffect slideShadows: false doesn't catch all */
+.swiper-slide-shadow,
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right,
+.swiper-slide-shadow-top,
+.swiper-slide-shadow-bottom {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+swiper-slide::part(slide-shadow),
+swiper-slide::part(slide-shadow-left),
+swiper-slide::part(slide-shadow-right) {
+  display: none !important;
+  opacity: 0 !important;
 }
 
 /* The Card */
@@ -99,8 +117,8 @@ swiper-slide {
   padding: 1.5rem;
   border-radius: 1.5rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -146,7 +164,7 @@ swiper-slide {
   content: "🏢"; /* Fallback icon for empty images */
   font-size: 4rem;
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.3;
   z-index: 1;
 }
 

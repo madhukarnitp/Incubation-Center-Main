@@ -32,11 +32,13 @@ const Incubations = () => {
             grab-cursor="true"
             centered-slides="true"
             slides-per-view="auto"
-            coverflow-effect-rotate="0"
-            coverflow-effect-stretch="0"
-            coverflow-effect-depth="300"
-            coverflow-effect-modifier="1"
-            coverflow-effect-slide-shadows="false"
+            coverflow-effect={JSON.stringify({
+              rotate: 0,
+              stretch: 0,
+              depth: 300,
+              modifier: 1,
+              slideShadows: false,
+            })}
             space-between="30"
             loop="true"
             autoplay-delay="3000"
