@@ -83,6 +83,10 @@
       transform: translateY(-3px);
   }
 
+  .footer-col .social-links a svg {
+    border-radius: 50%;
+  }
+
   .facebook:hover{
     filter:
         drop-shadow(0 0 6px #1877f2)
@@ -159,7 +163,7 @@
         padding-left: 20px;
     }
     .footer-col{
-      width: 100%;
+      width: 50%;
     }
     .footer_container2{
         align-items: stretch;
