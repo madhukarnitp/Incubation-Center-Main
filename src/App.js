@@ -83,6 +83,7 @@ function ScrollToHash() {
           <Route  path="/" element={<Homes />}/> 
           <Route index element={<Homes />}/>
           <Route path="/pag" element={<Pag/>}/>
+          <Route path="/Pag" element={<Pag/>}/>
           <Route path="/timeline" element={<Timeline/>}/>
           <Route  path="Notice/index.js" element={<Notice/>}/> 
           <Route path="/login" element={<Login/>}/>
