@@ -1,79 +1,80 @@
 import React from 'react';
 import { facebook_url, instagram_url, linkedin_url } from '../../constants/const';
 import "./styles.css";
-import { useNavigate } from 'react-router-dom';
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { RiLinkedinBoxFill } from "react-icons/ri";
-import { FaTwitter } from "react-icons/fa";
+//import { useNavigate } from 'react-router-dom';
+import { FaInstagram, FaXTwitter, FaFacebook, FaLinkedin, FaArrowUp } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 const Footer = () => {
   var currentTime = new Date();
   var year = currentTime.getFullYear();
-  const navigate=useNavigate();
-  const handlelogin=()=>{
-    navigate('/login')
-  }
+  //const navigate=useNavigate();
+  //const handlelogin=()=>{
+  //  navigate('/login')
+  //}
   return (
     <div>
-       <footer className="footer" id="footer"  data-aos="fade"  data-aos-duration="300">
-    <div className="container">
-      <div className="row">
-        <div className="footer-col">
-          <h4>IC NITP</h4>
-          <ul>
-            <li>
-              <Link to="/professor">Our Team</Link>
-            </li>
-            <li><span>Our Programs</span></li>
-            <li><span>privacy policy</span></li>
-            <li><span>Partnership Opportunities</span></li>
-            <li onClick={handlelogin}><span>Admin Notice</span></li>
-          </ul>
-        </div>
-        <div className="footer-col">
-          <h4>get help</h4>
-          <ul>
-            <li><span>FAQ</span></li>
-            <li><span>Success Stories</span></li>
-            <li><span>Application Process</span></li>
-            <li><span>Funding & Investment</span></li>
-            <li><span>Startup Resources</span></li>
-          </ul>
-        </div>
-        <div className="footer-col">
-          <h4>Know More</h4>
-          <ul>
-            <li><span>Alumni Network</span></li>
-            <li><span>Innovation Lab</span></li>
-            {/* <li><a href="#">shoes</a></li>
-            <li><a href="#">dress</a></li> */}
-          </ul>
-        </div>
-        <div className="footer-col">
-          <h4>follow us</h4>
-          <div className="social-links">
-            <a href={facebook_url}><i className="fab fa-facebook-f">< FaFacebook /></i></a>
-            <span><i className="fab fa-twitter">< FaTwitter /></i></span>
-            <a href={instagram_url}><i className="fab fa-instagram">< FaInstagram/></i></a>
-            <a href={linkedin_url}><i className="fab fa-linkedin-in">< RiLinkedinBoxFill/></i></a>
+      <footer className="footer" id="footer">
+      <div className="container">
+        <div className="row">
+          <div className="footer-col" data-aos="fade">
+            <h4>IC NITP</h4>
+            <ul>
+              <li><Link to="/professor">Our Team</Link></li>
+              <li><Link to="/">Our Programs</Link></li>
+              <li><Link to="/">privacy policy</Link></li>
+              <li><Link to="/">Partnership Opportunities</Link></li>
+              <li><Link to="/login">Admin Notice</Link></li>
+            </ul>
+          </div>
+          <div className="footer-col" data-aos="fade">
+            <h4>get help</h4>
+            <ul>
+              <li><Link to="/">FAQ</Link></li>
+              <li><Link to="/">Success Stories</Link></li>
+              <li><Link to="/">Application Process</Link></li>
+              <li><Link to="/">Funding & Investment</Link></li>
+              <li><Link to="/">Startup Resources</Link></li>
+            </ul>
+          </div>
+          <div className="footer-col" data-aos="fade">
+            <h4>Know More</h4>
+            <ul>
+              <li><Link to="/">Alumni Network</Link></li>
+              <li><Link to="/">Innovation Lab</Link></li>
+              {/* <li><Link to="#">shoes</Link></li>
+              <li><Link to="#">dress</Link></li> */}
+            </ul>
+          </div>
+          <div className="footer-col" data-aos="fade">
+            <h4>Follow Us</h4>
+            <div className="social-links">
+              <Link to={facebook_url} target="_blank" className="social-icon facebook"> <FaFacebook fill='#1877f2' size={32} /> </Link>
+              <Link to="/" className="social-icon twitter" > <FaXTwitter fill='#ffffff' size={32} /> </Link>
+              <Link to={instagram_url} target="_blank" className="social-icon instagram" > <FaInstagram fill='#e1306c' size={32} /> </Link>
+              <Link to={linkedin_url} target="_blank" className="social-icon linkedin" > <FaLinkedin fill='#0077b5' size={32} /> </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div className="footer_container2">
-      <div className="footer-text">
-        <p>Copyright &copy;
-          {year} by IC NITP | All Rights Reserved.
-        </p>
-      </div>
+      <div className="footer_container2" data-aos="fade">
+        <div className="footer-text">
+          <p>Copyright &copy; {year} by IC NITP | All Rights Reserved. </p>
+        </div>
 
-      <div className="footer-iconTop">
-        <button onClick={() => window.scrollTo(0, 0)}><i className='bx bx-up-arrow-alt'></i></button>
+        <div className="footer-iconTop">
+          <button
+            onClick={() => window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            })}
+            className="scroll-top-btn"
+          >
+          <FaArrowUp size={28} fill='white'/>
+          </button>
+        </div>
       </div>
-    </div>
-  </footer>
-    </div>
+    </footer>
+  </div>
   )
 }
 
