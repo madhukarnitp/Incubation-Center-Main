@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import React from 'react';
-import Pag from './page/card.js';
 import { incubationsData } from './incubationsData.js';
 
 
@@ -56,7 +54,7 @@ const Incubations = () => {
               <swiper-slide key={index}>
                 <article className="productions_card">
                   <div className="card__image">
-                    <img src={item.img} alt="image" className="card__img" />
+                    <img src={item.img} alt="incubation" className="card__img" />
                     <div className="card__shadow"></div>
                   </div>
 
@@ -70,7 +68,7 @@ const Incubations = () => {
                     )}
 
                     <div className="card_footer">
-                    <a href="#" className="card__button">View More</a>
+                    <a href="/" className="card__button">View More</a>
                     </div>
                   </div>
                 </article>
