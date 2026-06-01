@@ -70,11 +70,11 @@ const Faqs = () => {
           <div className='outer'>
             <div className="plus">+</div>
             <label htmlFor="question5" className="question">
-            How can I contact?
+            How can I contact the Incubation Centre?
             </label>
           </div>
           <div className="answers">
-           Reach out to us through the contact form on our website or email us directly at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Incubation@nitp.ac.in" target="_blank" rel="noopener noreferrer" style={{color: '#0ef', textDecoration: 'none'}}>Incubation@nitp.ac.in</a>.
+           Reach out to us through the contact form on our website or email us directly at <a href="mailto:Incubation@nitp.ac.in" style={{color: '#0ef', textDecoration: 'none'}}>Incubation@nitp.ac.in</a>.
           </div>
         </div>
       

@@ -67,6 +67,51 @@
       color: #0ef;
       padding-left: 8px;
   }
+  
+  .footer-col .contact-info-list li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      color: #aaa;
+  }
+  
+  .footer-col .contact-info-list li.email-info-item {
+      transition: all 0.3s ease;
+  }
+  
+  .footer-col .contact-info-list li.email-info-item:hover {
+      padding-left: 8px;
+      color: #0ef;
+  }
+  
+  .footer-col .contact-info-list li.email-info-item:hover .contact-icon {
+      fill: #0ef;
+  }
+  
+  .footer-col .contact-info-list li.email-info-item:hover a {
+      color: #0ef;
+  }
+  
+  .footer-col .contact-info-list li .contact-icon {
+      fill: white;
+      margin-right: 10px;
+      margin-top: 4px;
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+  }
+  
+  .footer-col .contact-info-list span {
+      line-height: 1.4;
+      font-size: 16px;
+      font-weight: 300;
+  }
+  
+  .footer-col .contact-info-list a.email-link {
+      text-transform: none;
+      display: inline;
+      padding: 0;
+  }
+  
   .footer-col .social-links a{
       display: inline-block;
       height: 42px;

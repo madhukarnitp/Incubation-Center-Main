@@ -47,10 +47,9 @@ const Footer = () => {
           </div>
           <div className="footer-col" data-aos="fade">
             <h4>Contact Us</h4>
-            <ul>
-              <li style={{display: 'flex', alignItems: 'flex-start', color: '#aaa', marginBottom: '15px'}}><FaLocationDot style={{marginRight: '10px', marginTop: '4px', flexShrink: 0}}/> <span style={{lineHeight: '1.4'}}>Incubation Center, NIT Patna, Ashok Rajpath Patna, Bihar- 800005</span></li>
-              <li style={{display: 'flex', alignItems: 'center', color: '#aaa', marginBottom: '15px'}}><FaEnvelope style={{marginRight: '10px'}}/> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Incubation@nitp.ac.in" target="_blank" style={{color: '#aaa', textDecoration: 'none', textTransform: 'none'}}>Incubation@nitp.ac.in</a></li>
-              <li style={{display: 'flex', alignItems: 'center', color: '#aaa', marginBottom: '15px'}}></li>
+            <ul className="contact-info-list">
+              <li><FaLocationDot className="contact-icon"/> <span>Incubation Center, NIT Patna, Ashok Rajpath Patna, Bihar- 800005</span></li>
+              <li className="email-info-item"><FaEnvelope className="contact-icon" style={{marginTop: '0'}}/> <a href="mailto:Incubation@nitp.ac.in" className="email-link">Incubation@nitp.ac.in</a></li>
             </ul>
           </div>
 
