@@ -2,7 +2,7 @@ import React from 'react';
 import { facebook_url, instagram_url, linkedin_url } from '../../constants/const';
 import "./styles.css";
 //import { useNavigate } from 'react-router-dom';
-import { FaInstagram, FaXTwitter, FaFacebook, FaLinkedin, FaArrowUp } from "react-icons/fa6";
+import { FaInstagram, FaXTwitter, FaFacebook, FaLinkedin, FaArrowUp, FaLocationDot, FaEnvelope, FaPhone } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 const Footer = () => {
   var currentTime = new Date();
@@ -45,6 +45,15 @@ const Footer = () => {
               <li><Link to="#">dress</Link></li> */}
             </ul>
           </div>
+          <div className="footer-col" data-aos="fade">
+            <h4>Contact Us</h4>
+            <ul>
+              <li style={{display: 'flex', alignItems: 'flex-start', color: '#aaa', marginBottom: '15px'}}><FaLocationDot style={{marginRight: '10px', marginTop: '4px', flexShrink: 0}}/> <span style={{lineHeight: '1.4'}}>Incubation Center, NIT Patna, Ashok Rajpath Patna, Bihar- 800005</span></li>
+              <li style={{display: 'flex', alignItems: 'center', color: '#aaa', marginBottom: '15px'}}><FaEnvelope style={{marginRight: '10px'}}/> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Incubation@nitp.ac.in" target="_blank" style={{color: '#aaa', textDecoration: 'none', textTransform: 'none'}}>Incubation@nitp.ac.in</a></li>
+              <li style={{display: 'flex', alignItems: 'center', color: '#aaa', marginBottom: '15px'}}></li>
+            </ul>
+          </div>
+
           <div className="footer-col" data-aos="fade">
             <h4>Follow Us</h4>
             <div className="social-links">
