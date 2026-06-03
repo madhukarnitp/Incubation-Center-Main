@@ -2,7 +2,7 @@ import React from 'react';
 import { facebook_url, instagram_url, linkedin_url } from '../../constants/const';
 import "./styles.css";
 //import { useNavigate } from 'react-router-dom';
-import { FaInstagram, FaXTwitter, FaFacebook, FaLinkedin, FaArrowUp } from "react-icons/fa6";
+import { FaInstagram, FaXTwitter, FaFacebook, FaLinkedin, FaArrowUp, FaLocationDot, FaEnvelope, FaPhone } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 const Footer = () => {
   var currentTime = new Date();
@@ -45,6 +45,14 @@ const Footer = () => {
               <li><Link to="#">dress</Link></li> */}
             </ul>
           </div>
+          <div className="footer-col" data-aos="fade">
+            <h4>Contact Us</h4>
+            <ul className="contact-info-list">
+              <li><FaLocationDot className="contact-icon"/> <span>Incubation Center, NIT Patna, Ashok Rajpath Patna, Bihar- 800005</span></li>
+              <li className="email-info-item"><FaEnvelope className="contact-icon" style={{marginTop: '0'}}/> <a href="mailto:Incubation@nitp.ac.in" className="email-link">Incubation@nitp.ac.in</a></li>
+            </ul>
+          </div>
+
           <div className="footer-col" data-aos="fade">
             <h4>Follow Us</h4>
             <div className="social-links">
