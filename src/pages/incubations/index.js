@@ -1,3 +1,4 @@
+import React, { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { incubationsData } from './incubationsData.js';
 
@@ -18,9 +19,9 @@ const Incubations = () => {
     <div>
       <section className='incubations' id='incubations'>
 
-        <div className="incubations_header"> 
-          <h1 data-aos="fade-down"   style={{ color: "#0ef" }}>Incubations</h1>
-          <p  data-aos="fade-right"> NIT Patna's Incubation Center fosters a statewide startup ecosystem, offering essential infrastructure like office spaces, meeting rooms, networking platforms, and management support for aspiring entrepreneurs.</p>
+        <div className="incubations_header">
+          <h1 data-aos="fade-down" style={{ color: "#0ef" }}>Incubations</h1>
+          <p data-aos="fade-right"> NIT Patna's Incubation Center fosters a statewide startup ecosystem, offering essential infrastructure like office spaces, meeting rooms, networking platforms, and management support for aspiring entrepreneurs.</p>
         </div>
 
         <div className="incubations_swiper">
@@ -49,12 +50,21 @@ const Incubations = () => {
               1440: { slidesPerView: 3, spaceBetween: 50 },
             })}
           >
-            
-            {incubationsData.map((item, index) => (
+
+            {incubationsData.map((item, index) => {
+              const hasImage = item.img && item.img.trim() !== "";
+              return (
               <swiper-slide key={index}>
                 <article className="productions_card">
-                  <div className="card__image">
-                    <img src={item.img} alt="incubation" className="card__img" />
+                  <div className={`card__image${!hasImage ? " show-fallback" : ""}`}>
+                    <img
+                      src={item.img}
+                      alt="incubation"
+                      className="card__img"
+                      onError={(e) => {
+                        e.currentTarget.parentElement.classList.add("show-fallback");
+                      }}
+                    />
                     <div className="card__shadow"></div>
                   </div>
 
@@ -68,17 +78,18 @@ const Incubations = () => {
                     )}
 
                     <div className="card_footer">
-                    <a href="/" className="card__button">View More</a>
+                      <a href="/" className="card__button">View More</a>
                     </div>
                   </div>
                 </article>
               </swiper-slide>
-            ))}
-</swiper-container>
-       
+            );
+            })}
+          </swiper-container>
+
         </div>
 
-     
+
         {/* <!-- Navigation buttons --> */}
         {/* <div className="swiper-button-next">
         <i className="ri-arrow-right-s-line"></i>
@@ -89,9 +100,9 @@ const Incubations = () => {
       </div> */}
 
         {/* <!-- Pagination --> */}
-       
+
         <div className="swiper-pagination"></div>
-          <div className="incubations_btn_container">
+        <div className="incubations_btn_container">
           <button className='incubations_btn' onClick={() => navigate('/pag')}>
             Litsen More</button>
         </div>
