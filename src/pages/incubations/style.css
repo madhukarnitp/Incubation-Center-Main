@@ -39,22 +39,22 @@ a {
 
 /*=============== LAYOUT & INCUBATIONS ===============*/
 .incubations {
-  display: block;  
+  display: block;
   padding: 8rem 5% 5rem;
   background: var(--body-color);
   min-height: 100vh;
 }
 
-.incubations_header { 
+.incubations_header {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   padding-bottom: 2rem;
   text-align: center;
 }
 
-.incubations_header h1 {  
+.incubations_header h1 {
   font-size: 4.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -62,7 +62,7 @@ a {
   text-shadow: 0 0 20px rgba(0, 238, 255, 0.3);
 }
 
-.incubations_header p {  
+.incubations_header p {
   font-size: 1.25rem;
   max-width: 800px;
   color: #a0aabf;
@@ -85,10 +85,11 @@ swiper-container {
 }
 
 swiper-slide {
-  height: auto; 
+  height: auto;
   display: flex;
   justify-content: center;
-  padding: 1.5rem 1rem; /* Add padding so box-shadows and hover scale don't get cut off */
+  padding: 1.5rem 1rem;
+  /* Add padding so box-shadows and hover scale don't get cut off */
   opacity: 1 !important;
 }
 
@@ -123,7 +124,7 @@ swiper-slide::part(slide-shadow-right) {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  max-width: 420px; 
+  max-width: 420px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -140,7 +141,7 @@ swiper-slide::part(slide-shadow-right) {
   border-radius: 1rem;
   overflow: hidden;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, rgba(0,238,255,0.05), rgba(0,238,255,0.01));
+  background: linear-gradient(135deg, rgba(0, 238, 255, 0.05), rgba(0, 238, 255, 0.01));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,21 +152,18 @@ swiper-slide::part(slide-shadow-right) {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
-  z-index: 2;
-  position: relative;
 }
 
-/* Show an icon or gradient if the image is broken/empty */
-.card__img[src=""] {
-  opacity: 0;
+/* Hide the actual <img> when it has no valid source */
+.card__image.show-fallback .card__img {
+  display: none;
 }
 
-.card__image::before {
-  content: "🏢"; /* Fallback icon for empty images */
+/* Fallback icon — only shown when .show-fallback is present */
+.card__image.show-fallback::before {
+  content: "🏢";
   font-size: 4rem;
-  position: absolute;
   opacity: 0.3;
-  z-index: 1;
 }
 
 .productions_card:hover .card__img {
@@ -187,7 +185,7 @@ swiper-slide::part(slide-shadow-right) {
 .card__incubationdata {
   display: flex;
   flex-direction: column;
-  flex-grow: 1; 
+  flex-grow: 1;
   z-index: 4;
 }
 
@@ -204,7 +202,7 @@ swiper-slide::part(slide-shadow-right) {
   color: #a0aabf;
   margin-bottom: 1.5rem;
   display: -webkit-box;
-  -webkit-line-clamp: 4; 
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   flex-grow: 1;
@@ -261,9 +259,11 @@ swiper-slide::part(slide-shadow-right) {
 swiper-container::part(pagination) {
   bottom: 0;
 }
+
 swiper-container::part(bullet) {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
+
 swiper-container::part(bullet-active) {
   background-color: var(--first-color);
 }
@@ -305,18 +305,22 @@ swiper-container::part(bullet-active) {
     padding: 6rem 3% 4rem;
   }
 }
+
 @media screen and (max-width: 768px) {
   .incubations_header h1 {
     font-size: 3rem;
   }
+
   .incubations_header p {
     font-size: 1rem;
     width: 95%;
   }
+
   .productions_card {
     max-width: 100%;
   }
 }
+
 @media screen and (max-width: 576px) {
   .incubations_header h1 {
     font-size: 2.5rem;
