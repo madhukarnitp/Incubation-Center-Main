@@ -24,7 +24,7 @@ import Professor from './pages/team/professor.js';
 import Student from './pages/team/student.js';
 import Admin from './pages/team/Admin.js';
 
-import Gallery1 from './pages/gallery/Gallery.js';
+import Gallery from './pages/gallery/Gallery.js';
 import React from 'react';
 import TalksLitsenMore from './pages/talks_LitsenMore/index.js';
 import { useLocation } from 'react-router-dom';
@@ -91,7 +91,7 @@ function ScrollToHash() {
           <Route path='/professor' element={<Professor />} />
           <Route path='/student' element={<Student />}/>
           <Route path='/admin' element={<Admin />}/>
-          <Route path="/gallery" element={<Gallery1/>}/>
+          <Route path="/gallery" element={<Gallery/>}/>
           <Route path="/talksmore" element={<TalksLitsenMore/>}/>
 
     
